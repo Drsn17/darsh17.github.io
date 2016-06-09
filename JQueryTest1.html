@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SlideUp</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <script src="http://code.jquery.com/jquery-git.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <style>
+        p{
+            background-color: red;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+<style>
+    .drsn{
+        background-color: aqua;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-5">
+            <p>Start</p>
+            <p id="msg" class=ok">second line</p>
+
+
+            <button>Submit</button>
+            <div id="output" style="font-size:50px" ></div>
+            <div>
+                <button id ="output1" style="font-size: 20px; background-color: red; color: white">my</button>
+            </div>
+            <div>
+                <input type="text" id ="output2" style="font-size: 20px">
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var counter=0;
+    $('button').click(function () {
+
+
+        counter=counter+2;
+
+        $('#output1').html("Counter"+counter)
+
+    })
+</script>
+<script>
+    var counter=0;
+    $('output1').click(function () {
+
+
+        counter=counter+2;
+
+        $('#button').html("Counter"+counter)
+
+    })
+</script>
+</body>
+
+
+
+</html>
