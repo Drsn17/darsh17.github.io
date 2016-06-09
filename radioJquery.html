@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio Button</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <style>
+        .red{
+            background-color: red;
+            color: white;
+            
+        }
+        .green{
+            background-color: green;
+            color: white;
+
+        }
+        .box{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+</script>
+
+    <div>
+        <input type="radio" name="color" value="Red"> Red<br>
+
+        <input type="radio" name="color" value="Green"> Green<br>
+
+
+
+</div>
+
+
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('input[type="radio"]').click(function(){
+
+            if ($(this).attr("value")=="Red") {
+                $(".box").not(".red").hide();
+                $(".red").css("border", "1px solid red")
+                $(".red").show();
+                console.log("hello");
+            }
+            if ($(this).attr("value")=="Green") {
+                $(".box").not(".green").hide();
+                $(".red").css("border", "1px solid red")
+                $(".red").show();
+            }
+        });
+
+
+    });
+</script>
+</html>
